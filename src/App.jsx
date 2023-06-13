@@ -1,9 +1,12 @@
-import ReactDOM from "react";
+import ReactDOM from "react-dom";
 import { ColoredMessage } from "./components/ColoredMessage";
+import { useState } from "react";
 
 export const App = () => {
+    const [num, setNum] = useState(0);
+
     const onClickButton = () => {
-        alert();
+        setNum(num + 1);
     }
 
     return (
@@ -13,6 +16,8 @@ export const App = () => {
             <ColoredMessage color='blue'>お元気ですか？</ColoredMessage>
             <ColoredMessage color='pink'>元気です！</ColoredMessage>
             <button onClick={onClickButton}>Click!</button>
+            <button onClick={onClickButton2}>Click!</button>
+            <p>{num}</p>
         </>
     );
 }
