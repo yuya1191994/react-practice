@@ -1,11 +1,12 @@
 import ReactDOM from "react-dom";
+import { ColoredMessage } from "./components/ColoredMessage";
 
 export const App = () => {
     const onClickButton = () => {
         alert();
     }
-    const contentStyle = {
-        color: 'blue',
+    const contentPinkStyle = {
+        color: 'pink',
         fontSize: '20px'
     };
 
@@ -13,7 +14,8 @@ export const App = () => {
         <>
             { console.log('Test') }
             <h1 style={{color: 'red'}}>こんにちは！</h1>
-            <p style={contentStyle}>お元気ですか？</p>
+            <ColoredMessage />
+            <p style={contentPinkStyle}>元気です！</p>
             <button onClick={onClickButton}>Click!</button>
         </>
     );
