@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import { ColoredMessage as C } from "./components/ColoredMessage";
 import { useState } from "react";
 import { useEffect } from "react";
+import { CssModules } from "./CssModules";
 
 export const App = () => {
     const [num, setNum] = useState(0);
@@ -22,6 +23,7 @@ export const App = () => {
             <C color='pink'>元気です！</C>
             <button onClick={onClickButton}>Click!</button>
             <p>{num}</p>
+            <CssModules />
         </>
     );
 }
