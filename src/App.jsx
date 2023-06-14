@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { CssModules } from "./CssModules";
 import { StyledJsx } from "./StyledJsx";
 import { StyledComponents } from "./components/StyledComponents";
+import { Emotion } from "./Emotion";
 
 export const App = () => {
     const [num, setNum] = useState(0);
@@ -28,6 +29,7 @@ export const App = () => {
             <CssModules />
             <StyledJsx />
             <StyledComponents />
+            <Emotion />
         </>
     );
 }
