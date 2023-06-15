@@ -1,9 +1,10 @@
 import ReactDOM from "react-dom";
-import { useState } from "react";
+import { useContext } from "react";
 import { Card } from "./Card";
+import { AdminFlagContext } from "./components/providers/AdminFlagProvider";
 
 export const App = () => {
-    const [isAdmin, setIsAdmin] = useState(false)
+    const {isAdmin, setIsAdmin} = useContext(AdminFlagContext)
 
     const onClickSwitch = () => setIsAdmin(!isAdmin)
 
