@@ -13,7 +13,6 @@ const style = {
 }
 
 export const Card = memo((props) => {
-    console.log(props)
     const { isAdmin } = props;
     
     return (
